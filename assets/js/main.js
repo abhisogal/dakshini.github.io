@@ -33,17 +33,19 @@ function linkAction(){
 }
 navLink.forEach(n => n.addEventListener('click', linkAction));
 
-/*==================== ACCORDION SKILLS ====================*/
-
-/*==================== QUALIFICATION TABS ====================*/
-
-
-/*==================== SERVICES MODAL ====================*/
-
-
-/*==================== PORTFOLIO SWIPER  ====================*/
-
-
+/*==================== PRODUCTS SWIPER  ====================*/
+let swiper = new Swiper(".products__container", {
+    cssMode: true,
+    loop: true,
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+});
 /*==================== TESTIMONIAL ====================*/
 
 
